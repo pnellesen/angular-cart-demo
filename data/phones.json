@@ -1,0 +1,35 @@
+ [
+	 {
+	 	"img": "images/phone.png",
+	 	"url": "#!phones",
+	 	"text": "Phone #1",
+	 	"title": "Fancy Phone",
+	 	"price":100.00,
+	 	"id": "phone1"
+	 },
+	  {
+	 	"img": "images/phone.png",
+	 	"url": "#!phones",
+	 	"text": "Phone #2",
+	 	"title": "Super Fancy Phone",
+	 	"price":200.00,
+	 	"id": "phone2"
+	
+	 },
+	  {
+	 	"img": "images/phone.png",
+	 	"url": "#!phones",
+	 	"text": "Phone #3",
+	 	"title": "Super Deluxe Fancy Phone",
+	 	"price":300.00,
+	 	"id": "phone3"
+	 },
+	  {
+	 	"img": "images/phone.png",
+	 	"url": "#!phones",
+	 	"text": "Phone #4",
+	 	"title": "Super Duper Deluxe Fancy Phone",
+	 	"price":400.00,
+	 	"id": "phone4"
+	 }
+ ]

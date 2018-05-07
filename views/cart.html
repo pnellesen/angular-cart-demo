@@ -1,0 +1,13 @@
+<div class="container">
+	<h1>Shopping Cart</h1>
+	<table class="table">
+		<thead><tr><th>Item</th><th>Cost</th><th>Remove</th></tr></thead>
+		<tbody>
+			<tr ng-repeat="item in cart track by $index"><td>{{item.item}}</td><td>{{item.cost}}</td><td><a href="javascript:void(0)" ng-click="removeItemFromCart(item,$index)">Remove</a></tr>
+			<tr ng-if="cart.length > 0"><td colspan="2">&nbsp;</td><td><button type="button" class="btn btn-primary" ng-click="clearCart()">Clear cart</button></td></tr>
+		</tbody>
+		
+	</table>
+	
+
+</div>

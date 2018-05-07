@@ -1,0 +1,49 @@
+
+<div class="container">
+<h1>Home</h1>
+
+
+  <div style="height: 200px">
+    <div uib-carousel template-url="template/carousel/pats-carousel.html" active="active" interval="interval" no-wrap="noWrapSlides" class="col-md-8 pats-carousel" >
+      <div uib-slide ng-repeat="slide in slides track by slide.slide_index" index="slide.slide_index">
+        <a href="{{slide.url}}?phone-id={{slide.slide_id}}">
+        	<img ng-src="{{slide.img}}" alt="{{slide.text}}" style="margin:auto;">
+	        <div class="carousel-caption yellow-caption">
+	          <h4>Slide {{slide.slide_id}}</h4>
+	          <p>{{slide.text}}</p>
+	        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row col-md-8" >
+    <div class="col-md-6">
+      <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+      <button type="button" class="btn btn-info" ng-click="randomize()">Randomize slides</button>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="noWrapSlides">
+          Disable Slide Looping
+        </label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <p>Interval, in milliseconds: <input type="number" class="form-control" ng-model="interval">
+      <br />Enter a negative number or 0 to stop the interval.</p>
+     <!--  <p>Total number of slides in carousel: <input type="number" class="form-control" ng-model="slideNum"></p> -->
+    </div>
+  </div>
+
+</div>
+
+<script id="template/carousel/pats-carousel.html" type="text/ng-template">
+    <div class="carousel">
+        <ol class="carousel-indicators" ng-show="slides.length > 1">
+            <li ng-repeat="slide in slides" ng-class="{active: isActive(slide)}" ng-click="select(slide)"></li>
+        </ol>
+         
+        <div class="carousel-inner" ng-mouseenter="pause()" ng-mouseleave="play()" ng-transclude></div>
+        <a class="left carousel-control" ng-click="prev()" ng-show="slides.length > 1"><span class="icon-prev yellow-caption"></span></a>
+        <a class="right carousel-control" ng-click="next()" ng-show="slides.length > 1"><span class="icon-next yellow-caption"></span></a>
+    </div>
+</script>

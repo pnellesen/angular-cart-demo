@@ -1,0 +1,34 @@
+ [
+	 {
+	 	"mins": 500,
+	 	"texts": 500,
+	 	"data": "100MB",
+	 	"name": "Basic",
+	 	"price":40,
+	 	"id": "plan1"
+	 },
+	 {
+	 	"mins": 750,
+	 	"texts": 750,
+	 	"data": "250MB",
+	 	"name": "Basic Plus",
+	 	"price":50,
+	 	"id": "plan2"
+	 },
+	  {
+	 	"mins": 1000,
+	 	"texts": 1000,
+	 	"data": "500MB",
+	 	"name": "Large",
+	 	"price":75,
+	 	"id": "plan3"
+	 },
+	  {
+	 	"mins": 2000,
+	 	"texts": 2000,
+	 	"data": "1GB",
+	 	"name": "Extra Large",
+	 	"price":100,
+	 	"id": "plan4"
+	 }
+ ]

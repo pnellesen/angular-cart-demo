@@ -1,0 +1,32 @@
+/* custom classes to override various boostrap classes */
+/* ----- BEGIN Carousel overrides ----- */
+.pats-carousel .carousel-indicators li {border-color:#000;}
+.pats-carousel .carousel-indicators .active {background-color:#000;}
+
+.pats-carousel [class^="icon-"] {font-family: 'Glyphicons Halflings';}
+
+.pats-carousel a.carousel-control:hover {cursor:pointer;}
+.pats-carousel .carousel-control .icon-next:before {content: '\e131';}
+.pats-carousel .carousel-control .icon-prev:before {content: '\e132';}
+/* ----- END Carousel overrides ----- */
+
+/* ----- BEGIN accordion overrides from github ---- */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+a.accordion-toggle {display:block;}
+
+.planAccordion .collapsing {
+	/* Adjust the speed of the Plan accordion expand/collapse. 
+			See https://stackoverflow.com/questions/26378785/how-can-i-speed-up-the-mobile-dropdown-in-the-bootstrap-navbar  */
+  -webkit-transition: height .50s ease;
+       -o-transition: height .50s ease;
+          transition: height .50s ease;
+}
+
+/* ----- END Accordion overrides ----- */
+
+/* Other custom classes */
+.yellow-caption {color:#000;}
+
+li.active-item {background:#ccc;}
+

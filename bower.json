@@ -1,0 +1,9 @@
+{
+  "name": "mobile-web-template",
+  "version": "0.0.1",
+  "author": "Pat Nellesen",
+  "description": "CELL RWD 003 project",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

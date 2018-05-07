@@ -1,0 +1,30 @@
+<div class="container">
+	<h1>Phones</h1>
+	
+	<div>
+		<p><input class="form-control" type="text" ng-model="phonesSearch" typeahead="phone.title for phone in phones" placeholder="Search phone titles"></p>
+	</div>
+	
+	<div>
+		<p>
+			<input ng-click="predicate='price'; reverse=false" type="radio" name="sortType" id="plh" checked><label for="plh">Price (Low to High)</label>
+			<br/><input ng-click="predicate='price'; reverse=true" type="radio" name="sortType" id="phl"><label for="phl">Price (High to Low)</label>
+			<br/><input ng-click="predicate='title'; reverse=false" type="radio" name="sortType" id="taz"><label for="taz">Name (A-Z)</label>
+			<br/><input ng-click="predicate='title'; reverse=true" type="radio" name="sortType" id="tza"><label for="tza">Name (Z-A)</label>
+		</p>
+	</div>
+	
+	
+	<div class="row">
+	    <div ng-repeat="phone in phones | filter:phonesSearch | orderBy:predicate:reverse" class="col-xs-6 col-md-3">
+	        <div class="thumbnail">
+	            <div class="caption">
+	                <h3>{{phone.title}} (${{phone.price}})</h3>
+	                <img src="{{phone.img}}">
+	                <p>{{phone.text}}</p>
+	                <cart-buttons id="phone.id" price="phone.price"></cart-buttons>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>

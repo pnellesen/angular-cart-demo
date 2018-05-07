@@ -1,0 +1,2 @@
+<p><span ng-if="!checkCartForItem(item.id)"><button type="button" class="btn btn-primary" ng-click="addItemToCart(item.id, item.price,$index)"><span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</button></span>
+<span ng-if="checkCartForItem(item.id)"><button type="button" class="btn btn-primary" disabled="disabled"><span class="glyphicon glyphicon-shopping-cart"></span> In cart</button>  <a href="javascript:void(0)" ng-click="removeItemFromCart(item.id)">Remove</a></span></p>
