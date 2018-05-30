@@ -1,9 +1,10 @@
 bower_components
 node_modules
-tests\node_modules
-tests\*.lnk
-tests\*.log
-tests\*.ini
+tests/node_modules
+tests/*.lnk
+tests/*.log
+tests/*.ini
+dist
 .project
 *.lnk
 *.bat

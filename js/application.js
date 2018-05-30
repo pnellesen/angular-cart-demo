@@ -77,7 +77,7 @@ myApp.service('myAppCart', function(localStorageService) {
 //Set up Phone factory to retrieve phone info from file
 myApp.factory('phoneFactory', function($resource){
  return $resource(
-     '/data/phones.json',
+     'data/phones.json',
      {},
      {
          get: {
@@ -101,7 +101,7 @@ myApp.service('phoneDataService', function() {
 // Set up plan factory to retrieve plan info from file 
 myApp.factory('planFactory', function($resource) {
     return $resource(
-        '/data/plans.json', {}, {
+        'data/plans.json', {}, {
         get: {
             method: 'GET',
             params: {},
@@ -274,7 +274,7 @@ myApp.directive('activeLink', ['$location', function(location) {
 
 myApp.directive('cartButtons', ['myAppCart', function(myAppCart) {
 	return {
-		templateUrl: '/views/cart-buttons.html',
+		templateUrl: 'views/cart-buttons.html',
 		transclude: true,
 		scope: {
 			id: "=id",
